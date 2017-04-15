@@ -1,0 +1,9 @@
+<h1> Edit a job </h1>
+
+<%= simple_format_for @job do |f| %>
+
+<%= f.input :title %>
+<%= f.input :description %>
+
+<%= f.sumbmit "Sumbmit"%>
+<% end %>
