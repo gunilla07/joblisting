@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>真·24K Offer</title>
-    <%= csrf_meta_tags %>
+    <title>Amazing Jobs</title>
+      <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-
+    <%= render "common/flashes" %>
     <div class="container-fluid">
       <div class="row">
         <%= render "common/navbar" %>
-      </div>      <%= render "common/flashes"%>
-    <%= yield %>
+        <%= yield %>
+    </div>
   </div>
 
   <%= render "common/footer" %>
