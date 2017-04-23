@@ -146,3 +146,19 @@
 .person:hover {
    border-color: #f1f1f1;
 }
+//----------自定义btn
+.btn-zdy {
+  color:#fff;
+	background: #ffcdd2; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #ffcdd2 0%,#ffebee 50%,#ffcdd2 100%); /* Chrome10+,Safari5.1+ */
+	}
+  .btn-zdy:hover {
+  	background: #ffcdd2;
+  	color:#FFFDE7;
+  	}
+
+.input-group{
+  margin-top: 20px;
+  width: 25%;
+  height: 90%;
+}
