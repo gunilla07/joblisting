@@ -19,6 +19,7 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
 //---------Navbar---------
 
  .navbar-default {
@@ -73,20 +74,21 @@
 
       .box-inner {
           background-color: rgba(250, 250, 250, 0.69);
-          padding-bottom: 5px;
+          padding-bottom: 3px;
           margin-top: 150px;
           margin-bottom: 150px;
+
       }
 
       .title {
-          font-family:"Papyrus",Georgia,Serif;
+          font-family:"微软雅黑",Georgia,Serif;
           text-align: center;
           margin-bottom: 80px;
           color: #ef9a9a;
       }
 
       .slogan {
-        font-family:"Papyrus",Georgia,Serif;
+        font-family:"微软雅黑",Georgia,Serif;
           color: #ef9a9a;
           margin-top: 10px;
           margin-bottom: 50px;
@@ -96,7 +98,7 @@
       }
 
       .lead {
-        font-family:"Papyrus",Georgia,Serif;
+        font-family:"微软雅黑",Georgia,Serif;
           margin-bottom: 60px;
           text-align: center;
           color: white;
@@ -133,13 +135,14 @@
 }
 
 
-
- //---------Footer---------
- footer {
-      color: #ffcdd2;
-  }
-
-  footer .footer-below {
-      padding: 25px 0;
-      background-color: #ffcdd2;
-  }
+//---------圆形图标
+.person {
+   border: 8px solid transparent;
+   margin-bottom: 20px;
+   width: 90%;
+   height: 90%;
+   opacity: 0.6;
+}
+.person:hover {
+   border-color: #f1f1f1;
+}

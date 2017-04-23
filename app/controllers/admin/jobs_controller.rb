@@ -68,6 +68,8 @@ class Admin::JobsController < ApplicationController
     redirect_to :back
   end
 
+  
+
   private
   def job_params
     params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound,
