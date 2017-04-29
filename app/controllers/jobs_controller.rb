@@ -15,18 +15,20 @@ class JobsController < ApplicationController
 
   def index
     @jobs = case params[:order]
+
       when 'by_lower_bound'
-        Job.published.order('wage_lower_bound DESC')
+        Job.published.lower_salary.paginate(:page => params[:page], :per_page => 5)
       when 'by_upper_bound'
-        Job.published.order('wage_upper_bound DESC')
+        Job.published.lower_salary.paginate(:page => params[:page], :per_page => 5)
       else
-        Job.published.recent
+        Job.published.recent.paginate(:page => params[:page], :per_page => 5)
       end
   end
 
 
   def new
     @job = Job.new
+
   end
 
   def create
@@ -46,6 +48,7 @@ end
 
 def update
   @job = Job.find(params[:id])
+
   if @job.update(job_params)
     redirect_to jobs_path
   else

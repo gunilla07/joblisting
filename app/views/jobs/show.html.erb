@@ -1,9 +1,29 @@
-<h1>  <%= @job.title %> </h1>
 
-<p>
-  <%= simple_format(@job.description) %>
-</p>
 
-<div class="text-center">
-  <%= link_to("投交简历", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration: underline;") %>
-</div>
+<div class="container">
+            <div class="col-sm-12">
+
+                <div class="bs-calltoaction bs-calltoaction-default">
+                    <div class="row">
+                        <div class="col-md-9 cta-contents">
+                            <h1 class="cta-title">
+                              <%= @job.title %>
+                              <%= link_to '<<', jobs_path, class: 'btn btn-zdy' %>
+                            </h1>
+                            <div class="cta-desc">
+                                <p>
+                                  <%= simple_format(@job.description) %>
+
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+
+                          <div class="btn btn-lg btn-block btn-default">
+                          <%= link_to("投交简历", new_job_resume_path(@job), :style => "font-size: 30px;") %>
+
+                        </div>
+                      </div>
+            </div>
+        </div>

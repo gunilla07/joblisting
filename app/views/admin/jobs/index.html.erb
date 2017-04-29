@@ -43,13 +43,13 @@
         <td> <%= job.wage_lower_bound %> </td>
         <td> <%= job.wage_upper_bound %> </td>
         <td>
-          <%= link_to("Edit", edit_admin_job_path(job), :class => "btn btn-xs btn-info") %>
+          <%= link_to("Edit", edit_admin_job_path(job), :class => "btn btn-xs btn-zdy") %>
           <%= link_to("Destroy", admin_job_path(job), :method => :delete, :class => "btn btn-xs btn-danger", :data => { :confirm => "Are you sure?" }) %>
           <% if job.is_hidden %>
 
-          <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-success") %>
+          <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-zdy1") %>
         <% else %>
-          <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning") %>
+          <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-zdy2") %>
             <% end %>
         </td>
         <td>
@@ -57,24 +57,5 @@
         </td>
     </tr>
     <% end %>
-</table>
 
-<nav aria-label="Page navigation">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+</table>

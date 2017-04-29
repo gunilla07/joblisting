@@ -23,9 +23,9 @@
 //---------Navbar---------
 
  .navbar-default {
-     background-color: #ffcdd2;//--导航栏的背景色
-     border-color: #ffcdd2;
-     margin-bottom: 0;
+     background-color: #F48FB1;//--导航栏的背景色
+     border-color: #F48FB1;
+
      border-radius: 0;
  }
 
@@ -61,7 +61,7 @@
  .navbar-default .navbar-nav > .open > a,
  .navbar-default .navbar-nav > .open > a:focus,
  .navbar-default .navbar-nav > .open > a:hover {
-     background-color: #ffcdd2; //--当鼠标停在账号上的背景块颜色
+     background-color: #F48FB1; //--当鼠标停在账号上的背景块颜色
      color: #FFFF8D; //--当鼠标停在账号上的字体颜色
  }
  //---------Box---------
@@ -71,25 +71,27 @@
       background-repeat: no-repeat;
       background-size: cover;
       margin-bottom: 50px;
+      margin-top: -20px;
+
 
       .box-inner {
-          background-color: rgba(250, 250, 250, 0.69);
+          background-color: rgba(250, 250, 250, 0);
           padding-bottom: 3px;
           margin-top: 150px;
-          margin-bottom: 150px;
+          margin-bottom: 320px;
 
       }
 
       .title {
-          font-family:"微软雅黑",Georgia,Serif;
+          font-family:"Avenir",Georgia,Serif;
           text-align: center;
           margin-bottom: 80px;
-          color: #ef9a9a;
+          color: #F48FB1;
       }
 
       .slogan {
-        font-family:"微软雅黑",Georgia,Serif;
-          color: #ef9a9a;
+        font-family:"Avenir",Georgia,Serif;
+          color: #F48FB1;
           margin-top: 10px;
           margin-bottom: 50px;
           text-align: center;
@@ -149,16 +151,288 @@
 //----------自定义btn
 .btn-zdy {
   color:#fff;
-	background: #ffcdd2; /* Old browsers */
-	background: -webkit-linear-gradient(top,  #ffcdd2 0%,#ffebee 50%,#ffcdd2 100%); /* Chrome10+,Safari5.1+ */
+	background: #F48FB1; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #F48FB1 0%,#F48FB1 50%,#F48FB1 100%); /* Chrome10+,Safari5.1+ */
 	}
   .btn-zdy:hover {
-  	background: #ffcdd2;
+  	background: #F48FB1;
   	color:#FFFDE7;
   	}
 
+.btn-zdy1{
+  color:#fff;
+	background: #80DEEA; /* Old browsers */
+	background: -webkit-linear-gradient(top,  #80DEEA 0%,#80DEEA 50%,#80DEEA 100%); /* Chrome10+,Safari5.1+ */
+
+}
+.btn-zdy1:hover {
+  background: #80DEEA;
+  color:#FFFDE7;
+  }
+
+.btn-zdy2{
+    color:#fff;
+  	background: #AB47BC; /* Old browsers */
+  	background: -webkit-linear-gradient(top,  #AB47BC 0%,#AB47BC 50%,#AB47BC 100%); /* Chrome10+,Safari5.1+ */
+
+  }
+.btn-zdy2:hover {
+    background: #AB47BC;
+    color:#FFFDE7;
+    }
+.nav-zdy {
+      color:#fff;
+    	background: #F48FB1; /* Old browsers */
+    	background: -webkit-linear-gradient(top,  #F48FB1 0%,#F48FB1 50%,#F48FB1 100%); /* Chrome10+,Safari5.1+ */
+    	}
+.nav-zdy:hover {
+      	background: #F48FB1;
+      	color:#FFFDE7;
+      	}
+
+//------------搜索框长度和宽度调节
 .input-group{
   margin-top: 20px;
   width: 25%;
   height: 90%;
 }
+
+//-------------分页按钮
+.pagination>li>a, .pagination>li>span, {
+  border-radius: 50% !important;
+  margin: 0 5px;
+  color: #F48FB1;
+  border-color: #F48FB1;
+
+}
+
+.pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    background-color: #F48FB1;
+    border-color: #F48FB1;
+    cursor: default;
+}
+//-------------panel框架
+.panel-zdy
+.panel-heading {
+    color: #f1f1f1;
+    background-color: #F48FB1;
+    border-color: #F48FB1;
+}
+//-------------btn按钮调色
+.btn-default {
+    color: #F48FB1;
+    background-color: #1f1f1;
+    border-color: #F48FB1;
+
+}
+.btn-default> .active > a {
+  color: #F48FB1;
+  background-color: #1f1f1;
+  border-color: #F48FB1;
+}
+//-------------搜索框调色
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #F48FB1;
+  }
+  blockquote{
+      border-left:none
+  }
+//---------panel框架
+  .quote-badge{
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .quote-box{
+
+      overflow: hidden;
+      margin-top: -50px;
+      padding-top: -100px;
+      border-radius: 17px;
+      background-color: #FCE4EC;
+      margin-top: 25px;
+      margin-left: -50px;
+      color:white;
+      width: 1200px;
+      box-shadow: 2px 2px 2px 2px #E0E0E0;
+
+  }
+
+  .quotation-mark{
+
+      margin-top: -10px;
+      font-weight: bold;
+      font-size:100px;
+      color:white;
+      font-family: "微软雅黑", Georgia, Serif;
+
+  }
+
+  .quote-text{
+
+      font-size: 19px;
+      margin-top: -65px;
+  }
+
+  .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #F48FB1;//-------panel框架里的横线
+  }
+
+  a {
+      color: #E91E63;
+      text-decoration: none;
+  }
+
+
+  .bs-calltoaction{
+      position: relative;
+      width:auto;
+      padding: 15px 25px;
+      border: 1px solid black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  }
+
+      .bs-calltoaction > .row{
+          display:table;
+          width: calc(100% + 30px);
+      }
+
+          .bs-calltoaction > .row > [class^="col-"],
+          .bs-calltoaction > .row > [class*=" col-"]{
+              float:none;
+              display:table-cell;
+              vertical-align:middle;
+          }
+
+              .cta-contents{
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+              }
+
+                  .cta-title{
+                      margin: 0 auto 15px;
+                      padding: 0;
+                  }
+
+                  .cta-desc{
+                      padding: 0;
+                  }
+
+                  .cta-desc p:last-child{
+                      margin-bottom: 0;
+                  }
+
+              .cta-button{
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+              }
+
+  @media (max-width: 991px){
+      .bs-calltoaction > .row{
+          display:block;
+          width: auto;
+      }
+
+          .bs-calltoaction > .row > [class^="col-"],
+          .bs-calltoaction > .row > [class*=" col-"]{
+              float:none;
+              display:block;
+              vertical-align:middle;
+              position: relative;
+          }
+
+          .cta-contents{
+              text-align: center;
+          }
+  }
+
+
+
+  .bs-calltoaction.bs-calltoaction-default{
+      color: #333;
+      background-color: #fff;
+      border-color: #ccc;
+  }
+
+  .bs-calltoaction.bs-calltoaction-primary{
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+  }
+
+  .bs-calltoaction.bs-calltoaction-info{
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #46b8da;
+  }
+
+  .bs-calltoaction.bs-calltoaction-success{
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+  }
+
+  .bs-calltoaction.bs-calltoaction-warning{
+      color: #fff;
+      background-color: #f0ad4e;
+      border-color: #eea236;
+  }
+
+  .bs-calltoaction.bs-calltoaction-danger{
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d43f3a;
+  }
+
+  .bs-calltoaction.bs-calltoaction-primary .cta-button .btn,
+  .bs-calltoaction.bs-calltoaction-info .cta-button .btn,
+  .bs-calltoaction.bs-calltoaction-success .cta-button .btn,
+  .bs-calltoaction.bs-calltoaction-warning .cta-button .btn,
+  .bs-calltoaction.bs-calltoaction-danger .cta-button .btn{
+      border-color:#fff;
+  }
+
+//--------footer置底
+  .footer {
+      background-color: #F48FB1;
+      color: #f5f5f5;
+      padding: 5px;
+      position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 100px;
+   margin: 0 -15px;
+
+   p {
+      color: white;
+     margin-top: 30px;
+   }
+  }
+
+
+
+  html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
